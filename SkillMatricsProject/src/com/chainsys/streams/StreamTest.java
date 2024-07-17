@@ -207,6 +207,8 @@ public class StreamTest {
         System.out.println("Maximum Value : "+numbers.stream().mapToInt(Integer::intValue).max().getAsInt());
         System.out.println("Minimum Value : "+numbers.stream().mapToInt(Integer::intValue).min().getAsInt());
         System.out.println("Average : "+numbers.stream().mapToInt(Integer::intValue).average().getAsDouble());
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("Printing the multipies of given list");
         numbers.stream().map(n->n*2).forEach(System.out::println);
 
     }
